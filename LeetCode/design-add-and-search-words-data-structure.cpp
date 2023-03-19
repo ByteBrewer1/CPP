@@ -1,3 +1,6 @@
+// AUTHOR :: RAHUL MISTRY
+// DATE   :: 19/03/2023
+
 struct TrieNode {
     bool end; // Flag to indicate whether this node represents the end of a word or not
     vector<TrieNode*>children=vector<TrieNode*>(26,nullptr); // Vector of pointers to child nodes for each possible character in the alphabet (26 lowercase English letters)
