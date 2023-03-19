@@ -4,6 +4,8 @@
         "iostream": "cpp",
         "string": "cpp",
         "bitset": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp"
     }
 }
