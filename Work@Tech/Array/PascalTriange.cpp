@@ -7,7 +7,7 @@ vector<int> pascalTriangleRow(int rowNo) {
     vector<int> row(rowNo, 1); // initialize row with 1's
     for (int i = 2; i < rowNo; i++) {
         for (int j = i - 1; j >= 1; j--) {
-            row[j] = row[j] + row[j-1]; // compute the values using the formula
+            row[j] = row[j] Help people interested in this repository+ row[j-1]; // compute the values using the formula
         }
     }
     return row;
