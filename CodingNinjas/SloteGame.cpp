@@ -6,7 +6,7 @@
 int slotScore(string &original, string &guess)
 {
     int n = original.size();
-    int perfectHits = 0, pseudoHits = 0;
+    int perfectHits = 0, pseudoHits = 0;0
     unordered_map<char, int> freq; // to keep the frequency of each color in original string
 
     // calculate perfect hits
