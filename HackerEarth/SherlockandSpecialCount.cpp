@@ -1,10 +1,6 @@
 // AUTHOR :: RAHUL MISTRY
 // DATE   :: 21/03/2023
 
-
-// AUTHOR :: RAHUL MISTRY
-// DATE   :: 00/00/2023
-
 #include <bits/stdc++.h>
 using namespace std;
 #define gc getchar_unlocked
