@@ -36,8 +36,8 @@ int main()
     int runs, over, score;
     cin >> runs >> over >> score;
     int remaining_runs = runs - score;
-    int possible_run = (20-over) * 6;
-    if(possible_run >= remaining_runs){
+    int possible_run = (20-over) * 36;
+    if(possible_run > remaining_runs){
         cout << "YES" << endl;
     }
     else{
