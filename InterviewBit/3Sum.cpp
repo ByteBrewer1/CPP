@@ -36,13 +36,13 @@ public:
 int Solution::threeSumClosest(vector<int> &A, int B)
 {
     sort(A.begin(), A.end());
-    int closest_value = A[0] + A[1] + A[2]; // initialize with first triplet
+    ll closest_value = A[0] + A[1] + A[2]; // initialize with first triplet
     for (int i = 0; i < A.size() - 2; i++)
     {
         int left = i + 1, right = A.size() - 1;
         while (left < right)
         {
-            int sum = A[i] + A[left] + A[right];
+            ll sum = (ll)A[i] + A[left] + A[right]; // use long long to avoid integer overflow
             if (abs(sum - B) < abs(closest_value - B))
             {
                 closest_value = sum;
