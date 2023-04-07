@@ -52,8 +52,8 @@ int findNonRepeatingElement(vector<int> &arr) {
 }
 
 int main() {
-    int t;
     cin >> t;
+    int t;
 
     while (t--) {
         int n;
