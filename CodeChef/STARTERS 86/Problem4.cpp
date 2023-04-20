@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define gc getchar_unlocked
-#define fo(i, n) for (i = 0; i < n; i++)
+#define fo(i, n) for (int i = 0; i < n; i++)
 #define Fo(i, k, n) for (i = k; k < n ? i < n : i > n; k < n ? i += 1 : i -= 1)
 #define ll long long
 #define deb(x) cout << #x << "=" << x << endl
@@ -27,10 +27,31 @@ typedef vector<pl> vpl;
 typedef vector<vi> vvi;
 typedef vector<vl> vvl;
 
+void solve(){
+    int n;
+    cin >> n;
+    int arr[n];
+    int diff = 1000000;
+    fo(i, n)
+    {
+        cin >> arr[i];
+    }
+    fo(i, n){
+        diff = min(diff, max(abs(arr[i] - arr[i - 1]), abs(arr[i] - arr[i + 1])));
+    }
+    diff = min(diff, abs(arr[0] - arr[1]));
+    diff = min(diff, abs(arr[n - 1] - arr[n]));
+    cout << diff << endl;
+}
+
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+    int t; cin >> t;
+    while(t--){
+        solve();
+    }
     return 0;
 }
