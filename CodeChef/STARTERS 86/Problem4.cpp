@@ -1,6 +1,5 @@
 // AUTHOR :: RAHUL MISTRY
 // DATE   :: 20/04/2023
-
 #include <bits/stdc++.h>
 using namespace std;
 #define gc getchar_unlocked
@@ -36,11 +35,11 @@ void solve(){
     {
         cin >> arr[i];
     }
-    fo(i, n){
+    fo(i, n-2){
         diff = min(diff, max(abs(arr[i] - arr[i - 1]), abs(arr[i] - arr[i + 1])));
     }
     diff = min(diff, abs(arr[0] - arr[1]));
-    diff = min(diff, abs(arr[n - 1] - arr[n]));
+    diff = min(diff, abs(arr[n - 1] - arr[n-2]));
     cout << diff << endl;
 }
 
